@@ -38,10 +38,24 @@ module.exports = {
     'import/extensions': 'off',
     'import/no-extraneous-dependencies': 'off',
     'no-underscore-dangle': 'off',
-    'i18next/no-literal-string': ['error', { markupOnly: true, ignoreAttribute: ['data-testid', 'to'] }],
+    'i18next/no-literal-string': [
+      'error',
+      {
+        markupOnly: true,
+        ignoreAttribute: ['data-testid', 'to'],
+      },
+    ],
     'max-len': 'off',
   },
   globals: {
     __IS_DEV__: true,
   },
+  overrides: [
+    {
+      files: ['**/src/**/*.tsx'],
+      rules: {
+        'i18next/no-literal-string': 'off',
+      },
+    },
+  ],
 };
