@@ -10,7 +10,6 @@ import ListIcon from 'shared/assets/icons/list.svg';
 import HomeIcon from 'shared/assets/icons/home.svg';
 import cls from './Sidebar.module.scss';
 
-
 interface SidebarProps {
   className?: string;
 }

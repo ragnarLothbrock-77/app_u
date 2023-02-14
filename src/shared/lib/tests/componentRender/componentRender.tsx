@@ -20,4 +20,4 @@ export function componentRender(component: ReactNode, options: componentRenderOp
       </I18nextProvider>
     </MemoryRouter>,
   );
-};
+}
