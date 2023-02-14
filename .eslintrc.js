@@ -46,7 +46,6 @@ module.exports = {
       },
     ],
     'max-len': 'off',
-    'linebreak-style': 0,
   },
   globals: {
     __IS_DEV__: true,
