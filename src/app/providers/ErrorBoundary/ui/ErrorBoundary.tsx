@@ -1,6 +1,6 @@
 import React, { ErrorInfo, ReactNode, Suspense } from 'react';
 import {
-  PageForErrorBoundary
+  PageForErrorBoundary,
 } from 'widgets/PageForErrorBoundary/ui/PageForErrorBoundary';
 
 interface ErrorBoundaryProps {
