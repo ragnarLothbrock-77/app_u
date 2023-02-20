@@ -10,5 +10,7 @@
   "toggle": "Переключить",
   "ShortName": "EN",
   "FullName": "English",
-  "Sign In'": "Войти"
+  "Sign In": "Войти",
+  "decrement": "Уменьшить",
+  "increment": "Увеличить"
 }

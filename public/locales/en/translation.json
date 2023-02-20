@@ -10,5 +10,7 @@
   "toggle": "toggle",
   "ShortName": "РУ",
   "FullName": "Русский",
-  "Sign In'": "Sign In"
+  "Sign In": "Sign In",
+  "decrement": "decrement",
+  "increment": "increment"
 }
