@@ -12,5 +12,7 @@
   "FullName": "Русский",
   "Sign In": "Sign In",
   "decrement": "decrement",
-  "increment": "increment"
+  "increment": "increment",
+  "Type username": "Type username",
+  "Type password": "Type password"
 }

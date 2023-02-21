@@ -8,13 +8,13 @@ import React, {
 } from 'react';
 import { Portal } from 'shared/ui/Portal/Portal';
 import cls from './Modal.module.scss';
-import { useTheme } from 'app/providers/ThemeProvider';
 
 interface ModalProps {
   className?: string;
   children?: ReactNode,
   isOpened?: boolean,
   onClose?: () => void;
+  lazy?: boolean;
 }
 
 const ANIMATION_DELAY = 300;
@@ -24,12 +24,19 @@ export const Modal = (props: ModalProps) => {
     className,
     children,
     isOpened,
+    lazy,
     onClose,
   } = props;
 
   const [isClosing, setIsClosing] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
   const timerRef = useRef<ReturnType<typeof setTimeout>>();
-  const { theme } = useTheme();
+
+  useEffect(() => {
+    if (isOpened) {
+      setIsMounted(true);
+    }
+  }, [isOpened]);
 
   const handleCloseModal = useCallback(() => {
     if (onClose) {
@@ -65,6 +72,10 @@ export const Modal = (props: ModalProps) => {
     [cls.opened]: isOpened,
     [cls.isClosing]: isClosing,
   };
+
+  if (lazy && !isMounted) {
+    return null;
+  }
 
   return (
     <Portal>

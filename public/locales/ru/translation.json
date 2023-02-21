@@ -12,5 +12,7 @@
   "FullName": "English",
   "Sign In": "Войти",
   "decrement": "Уменьшить",
-  "increment": "Увеличить"
+  "increment": "Увеличить",
+  "Type username": "Введите имя",
+  "Type password": "Введите пароль"
 }

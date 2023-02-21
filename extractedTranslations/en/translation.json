@@ -1,4 +1,5 @@
 {
+  "": "",
   "About": "About",
   "EN": "",
   "Main": "Main",
@@ -6,6 +7,8 @@
   "Reload page": "Reload page",
   "Sign In": "Sign In",
   "Something went wrong": "Something went wrong",
+  "Type password": "Type password",
+  "Type username": "Type username",
   "decrement": "",
   "increment": "",
   "toggle": "toggle",
