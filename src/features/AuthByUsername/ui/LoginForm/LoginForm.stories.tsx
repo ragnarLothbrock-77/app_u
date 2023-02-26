@@ -3,7 +3,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import {
   storeDecorator,
 } from 'shared/config/storybook/storeDecorator/storeDecorator';
-import { LoginForm } from './LoginForm';
+import LoginForm from './LoginForm';
 
 export default {
   title: 'features/LoginModal',
