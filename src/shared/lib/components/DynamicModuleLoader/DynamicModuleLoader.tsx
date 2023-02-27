@@ -13,7 +13,7 @@ type ReducersListEntry = [StateSchemaKey, Reducer];
 
 interface DynamicModuleLoaderProps {
   reducers: ReducersList,
-  name: StateSchemaKey,
+  name?: StateSchemaKey,
   removeAfterUnmounted?: boolean,
 }
 

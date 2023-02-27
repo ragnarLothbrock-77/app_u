@@ -15,5 +15,14 @@
       "password": "123"
     }
   ],
-  "profile": { "name": "typicode" }
+  "profile": {
+    "first": "John",
+    "lastname": "Wick",
+    "age": 44,
+    "currency": "USD",
+    "country": "USA",
+    "city": "Boston",
+    "username": "admin",
+    "avatar": "https://www.tampabay.com/resizer//xmMmStfxp3j5Rw0m131rToG7_cA=/900x506/smart/filters:format(webP)/cloudfront-us-east-1.images.arcpublishing.com/tbt/32WQ45GJOMI6TMRBPAY4DVT77I.jpg"
+  }
 }
