@@ -1,5 +1,6 @@
-import { classNames } from 'shared/lib/classNames/classNames';
+import { classNames, Mods } from 'shared/lib/classNames/classNames';
 import React, {
+  MutableRefObject,
   ReactNode,
   useCallback,
   useEffect,
@@ -30,7 +31,7 @@ export const Modal = (props: ModalProps) => {
 
   const [isClosing, setIsClosing] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
-  const timerRef = useRef<ReturnType<typeof setTimeout>>();
+  const timerRef = useRef() as MutableRefObject<ReturnType<typeof setTimeout>>;
 
   useEffect(() => {
     if (isOpened) {
@@ -68,7 +69,7 @@ export const Modal = (props: ModalProps) => {
     };
   }, [isOpened, handleKeyCloseModal]);
 
-  const mods: Record<string, boolean> = {
+  const mods: Mods = {
     [cls.opened]: isOpened,
     [cls.isClosing]: isClosing,
   };
