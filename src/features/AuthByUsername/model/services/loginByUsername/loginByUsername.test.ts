@@ -30,11 +30,11 @@ describe('loginByUsername.test', () => {
 
   test('error login', async () => {
     const thunk = new TestAsyncThunk(loginByUsername);
+    thunk.api.post.mockReturnValue(Promise.resolve({ status: 403 }));
     const result = await thunk.callThunk({ username: 'admin', password: '123' });
 
-    thunk.api.post.mockReturnValue(Promise.resolve({ status: 403 }));
-    expect(thunk.api.post).toHaveBeenCalled();
     expect(thunk.dispatch).toHaveBeenCalledTimes(2);
+    expect(thunk.api.post).toHaveBeenCalled();
     expect(result.meta.requestStatus).toBe('rejected');
     expect(result.payload).toEqual('Incorrect username or password');
   });

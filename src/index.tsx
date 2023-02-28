@@ -10,11 +10,11 @@ import 'app/styles/index.scss';
 render(
   <BrowserRouter>
     <StoreProvider>
-        <ErrorBoundary>
-          <ThemeProvider>
-            <App />
-          </ThemeProvider>
-        </ErrorBoundary>
+      <ErrorBoundary>
+        <ThemeProvider>
+          <App />
+        </ThemeProvider>
+      </ErrorBoundary>
     </StoreProvider>
   </BrowserRouter>,
   document.getElementById('root'),
