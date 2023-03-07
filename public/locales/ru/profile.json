@@ -1,6 +1,19 @@
 {
   "User profile": "Профиль",
-  "Change": "Редактировать",
-  "Your firstname": "Ваше имя",
-  "Your lastname": "Ваша фамилия"
+  "Change data": "Редактировать",
+  "Server error": "Ошибка сервера",
+  "Incorrect country": "Некорректные данные страны",
+  "Incorrect age": "Некорректный возраст",
+  "Incorrect user data": "Некорректные данные пользователя",
+  "No data": "Данные пусты",
+  "Cancel": "Отменить",
+  "Save": "Сохранить",
+  "Your firstname": "Имя",
+  "Your lastname": "Фамилия",
+  "Your City": "Город",
+  "Your age": "Возраст",
+  "Choice username": "Никнейм",
+  "Avatar link": "Ссылка на аватар",
+  "Choice Country": "Выберите страну",
+  "Choice currency": "Выберите валюту",
 }
