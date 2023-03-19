@@ -1,5 +1,8 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { ThunkConfig } from 'app/providers/StoreProvider';
+import {
+  ThunkConfig,
+  ThunkExtraArg,
+} from 'app/providers/StoreProvider/config/StateSchema';
 import { Profile } from '../../types/profile';
 
 export const fetchProfileData = createAsyncThunk<
@@ -8,9 +11,8 @@ export const fetchProfileData = createAsyncThunk<
   ThunkConfig<string>
 >(
   'profile/fetchProfileData',
-  async (_, thunkApi) => {
-    const { extra, rejectWithValue } = thunkApi;
-
+  async (_, thunkAPI) => {
+    const { rejectWithValue, extra } = thunkAPI;
     try {
       const response = await extra.api.get<Profile>('/profile');
 
@@ -21,7 +23,7 @@ export const fetchProfileData = createAsyncThunk<
       return response.data;
     } catch (e) {
       console.log(e);
-      return rejectWithValue('error');
+      return rejectWithValue('Incorrect username or password');
     }
   },
 );

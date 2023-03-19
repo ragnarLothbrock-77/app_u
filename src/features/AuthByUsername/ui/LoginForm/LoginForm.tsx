@@ -50,7 +50,7 @@ const LoginForm = ({ className, onSuccess }: LoginFormProps) => {
   }, [onSuccess, dispatch, password, username]);
 
   return (
-    <DynamicModuleLoader removeAfterUnmounted reducers={initialReducers}>
+    <DynamicModuleLoader removeAfterUnmounted reducers={initialReducers} name="login">
       <div className={classNames(cls.loginForm, {}, [className])}>
         <Text title={t('Authorization Form')} />
         {error && <Text text={error} theme={TextTheme.ERROR} />}
