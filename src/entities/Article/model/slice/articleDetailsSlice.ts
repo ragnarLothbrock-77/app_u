@@ -12,14 +12,7 @@ const initialState: ArticleDetailsSchema = {
 export const articleDetailsSlice = createSlice({
   name: 'entities/articleDetails',
   initialState,
-  reducers: {
-    // update: (state, action: PayloadAction<ArticleDetails>) => {
-    //   state.data = { ...state.data, ...action.payload };
-    // },
-    // revert: (state) => {
-    //   state.validateErrors = undefined;
-    // },
-  },
+  reducers: {},
   extraReducers: (builder) => {
     builder
       .addCase(fetchArticleByID.pending, (state) => {

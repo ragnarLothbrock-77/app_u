@@ -16,5 +16,8 @@
   "decrement": "decrement",
   "increment": "increment",
   "Type username": "Type username",
-  "Type password": "Type password"
+  "Type password": "Type password",
+  "Articles": "Articles",
+  "No comments": "No comments",
+  "Authorization Form": "Authorization Form"
 }

@@ -16,5 +16,8 @@
   "decrement": "Уменьшить",
   "increment": "Увеличить",
   "Type username": "Введите имя",
-  "Type password": "Введите пароль"
+  "Type password": "Введите пароль",
+  "Articles": "Статьи",
+  "No comments": "Нет комментариев",
+  "Authorization Form": "Форма авторизации"
 }

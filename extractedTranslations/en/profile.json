@@ -1,18 +1,25 @@
 {
   "": "",
+  "Avatar link": "",
+  "Cancel": "",
   "Change data": "",
+  "Choice country": "",
+  "Choice currency": "",
   "Error from downloading profile data": "",
   "Incorrect age": "",
   "Incorrect country": "",
   "Incorrect user data": "",
   "No data": "",
+  "Save": "",
   "Server error": "",
   "Try to reload page": "",
+  "Type username": "",
   "User profile": "",
   "Your City": "",
   "Your age": "",
   "Your firstname": "",
   "Your lastname": "",
   "Введите имя пользователя": "",
-  "Введите ссылку на аватар": ""
+  "Введите ссылку на аватар": "",
+  "Укажите валюту": ""
 }

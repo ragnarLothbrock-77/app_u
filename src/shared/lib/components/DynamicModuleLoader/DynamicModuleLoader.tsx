@@ -11,7 +11,6 @@ export type ReducersList = {
 
 interface DynamicModuleLoaderProps {
   reducers: ReducersList,
-  name?: StateSchemaKey,
   removeAfterUnmounted?: boolean,
 }
 
@@ -19,7 +18,6 @@ export const DynamicModuleLoader: FC<DynamicModuleLoaderProps> = (props) => {
   const {
     children,
     reducers,
-    name,
     removeAfterUnmounted,
   } = props;
   const store = useStore() as ReduxStoreWithManager;

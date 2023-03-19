@@ -1,6 +1,6 @@
 {
-  "User profile": "User Profile",
-  "Change": "Change data",
+  "User profile": "User profile",
+  "Change data": "Change data",
   "Server error": "Server error",
   "Incorrect country": "Incorrect country",
   "Incorrect age": "Incorrect age",
@@ -12,8 +12,8 @@
   "Your lastname": "Your lastname",
   "Your City": "Your City",
   "Your age": "Your age",
-  "Choice username": "Choice username",
-  "Avatar link": "Avatar link",
-  "Choice Country": "Your age",
+  "Choice country": "Choice country",
   "Choice currency": "Choice currency",
+  "Type username": "Type username",
+  "Avatar link": "Avatar link"
 }
